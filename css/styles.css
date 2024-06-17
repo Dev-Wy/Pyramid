@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(208, 187, 160);
+    background-image: url(img/background-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+}
