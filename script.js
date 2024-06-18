@@ -1,20 +1,47 @@
 
+//Pyramid Variables
+function displayPyramid(){
+const character = document.getElementById('character').value || "*";
+const count = parseInt(document.getElementById('count').value) || 5;
+const inverted = document.getElementById('inverted').checked;
+
+const result = generatePyramid(character, count, inverted); document.getElementById('output').textContent = result;
+}
+
+function generatePyramid(character, count, inverted) {
+  const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+  }
+  
+  for (let i = 1; i <= count; i++) {
+    if (inverted) {
+      rows.unshift(padRow(i, count));
+    } else {
+      rows.push(padRow(i, count));
+    }
+  }
+  
+  let result = ""
+  
+  for (const row of rows) {
+    result = result + "\n" + row;
+  }
+  return result;
+}
+
 //Selection Variables 
-var subCharactersElement = document.querySelector("#characters");
+/*var subCharactersElement = document.querySelector("#characters");
 var subSizesElement = document.querySelector("#sizes");
 var subDirectionsElement = document.querySelector("#directions");
 //.result is not connected. Try to hook up as pyramid.
 var result = document.querySelector(".result");
 var subCharacters = "dollar-sign";
 var subSizes = "small";
-var subDirections = "false";
+var subDirections = "false";*/
 
-//Pyramid Variables
-const character = "";
-const count = "";
-const rows = [];
-let inverted = false;
-
+/*const rows = [];
 //Selection JS
 subCharactersElement.addEventListener("change", function (e) {
   subCharacters = e.target.value;
@@ -37,9 +64,9 @@ subDirectionsElement.addEventListener("change", function (e) {
 var updateCharactersDiv = function () {
   var pyramidCharacters = "$";
   if(subCharacters === "asterisk") {
-     prymidCharacters= "*";
+     pyramidCharacters= "*";
   } else if (subCharacters === "hashtag") {
-    prymidCharacters = "#";
+    pyramidCharacters = "#";
   }
 }
 
@@ -49,7 +76,7 @@ var updateSizesDiv = function () {
   if (subSizes === "medium") {
     pyramidSizes = 10;
   } else if (subSizes === "large") {
-    prymidSizes = 15;
+    pyramidSizes = 15;
   } 
 };
 
@@ -61,23 +88,4 @@ var updateDirectionsDiv = function () {
   }
 };
 
-return (result);
-
-//Pyramid JS
-function padRow(rowNumber, rowCount) {
-    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-  }
-  
-  for (let i = 1; i <= count; i++) {
-    if (inverted) {
-      rows.unshift(padRow(i, count));
-    } else {
-      rows.push(padRow(i, count));
-    }
-  }
-  
-  let result = ""
-  
-  for (const row of rows) {
-    result = result + "\n" + row;
-  }
+return (result);*/

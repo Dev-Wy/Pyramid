@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Pyramid Generator</title>
   </head>
   <body>
-    <div class = "content-wrapper">
-        <h1>Build Your Pyramid</h1>
-        <div class="character">
-            <!--Pick up by adjusting below to meet subscription calculator format.-->
-            <label for="characters">Pick a character</label>
-            <select name="characters" id="characters">
+    <h1>Pyramid Generator</h><br><br>
+        <label for="character">Character:</label>
+        <input type="text" id="character" placeholder="Enter a letter or symbol"><br><br>
+            
+        <label for="count">Size:</label>
+        <input type="number" id="count" placeholder="Enter a number"><br><br>
+        
+       
+        <label for="inverted">Upside Down?</label>
+        <input type="checkbox" id="inverted"><br><br>
+
+        <button onclick="displayPyramid()">Build My Pyramid!</button><br><br>
+
+        <pre id="output"></pre>
+        <!--<select name="character" id="characters">
                 <option value="dollar-sign">$</option>
                 <option value="asterisk">*</option>
                 <option value="hashtag">#</option>
             </select>
         </div>
-        <div class="size">
+        <div class="count">
             <label for="sizes">Pick a size</label>
             <select name="sizes" id="sizes">
                 <option value="small">small</option>
@@ -29,16 +38,11 @@
         </div>
         <div class="direction">
             <label for="directions">Pick a direction</label>
-            <select name="directions" id="directions">
-                <option value="false">Right side up</option>
-                <option value="true">Upside down</option> 
-            </select>
+            
         </div>
+        <button onclick="build()">Build your Pyramid</button>
         <div class = "pyramid">
-            <!--Need help to find out how to display the Pyramid here. var result to tie in JS? -->
-            <p> </p>
-        </div>
-    </div>
+        Need help to find out how to display the Pyramid here. var result to tie in JS? -->
     <script src="./script.js"></script>
   </body>
 </html>
