@@ -1,9 +1,39 @@
 body {
     background-color: rgb(208, 187, 160);
-    background-image: url(img/background-img.png);
+    background-image: url('../img/pyramids.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
     margin-top: 50px;
     margin-left: 50px;
+}
+
+h1 {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 700;
+        font-size: 5em;
+        font-style: normal;
+        line-height: 0.5em;
+}
+
+label {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+}
+
+#inverted {
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: rgb(208, 187, 160);
+}
+
+button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #fe6c32;
+    background-image: linear-gradient(#e6ad81, #bd6947);
+    border: 3px solid #962424;
+    font-size: 1.75rem;
 }
