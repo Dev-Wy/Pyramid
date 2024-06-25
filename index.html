@@ -11,41 +11,23 @@
     <title>Pyramid Generator</title>
   </head>
   <body>
-    <h1>Pyramid Generator</h><br><br>
-      
+    <div class=flex-container>
+        <h1>Pyramid Generator</h1>
+    </div><br><br>
+    <div class=label-container>
         <label for="character">Character:</label>
-        <input type="text" id="character" placeholder="Enter a letter or symbol"><br><br>
+        <input type="text" id="character" placeholder="Enter a letter or symbol"><br>
             
         <label for="count">Size:</label>
-        <input type="number" id="count" placeholder="Enter a number"><br><br>
+        <input type="number" id="count" placeholder="Enter a number"><br>
         
-        <label for="inverted">Upside Down?</label>
-        <input type="checkbox" id="inverted"><br><br>
+        <label for="inverted">Invert</label>
+        <input type="checkbox" id="inverted"><br>
+       
+    </div>
+    <button onclick="displayPyramid()">Build My Pyramid!</button><br><br>
+    <pre id="output"></pre>
 
-        <button onclick="displayPyramid()">Build My Pyramid!</button><br><br>
-
-        <pre id="output"></pre>
-        <!--<select name="character" id="characters">
-                <option value="dollar-sign">$</option>
-                <option value="asterisk">*</option>
-                <option value="hashtag">#</option>
-            </select>
-        </div>
-        <div class="count">
-            <label for="sizes">Pick a size</label>
-            <select name="sizes" id="sizes">
-                <option value="small">small</option>
-                <option value="medium">medium</option>
-                <option value="large">large</option>
-            </select>
-        </div>
-        <div class="direction">
-            <label for="directions">Pick a direction</label>
-            
-        </div>
-        <button onclick="build()">Build your Pyramid</button>
-        <div class = "pyramid">
-        Need help to find out how to display the Pyramid here. var result to tie in JS? -->
     <script src="./script.js"></script>
   </body>
 </html>

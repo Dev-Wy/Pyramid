@@ -6,34 +6,65 @@ body {
     display: block;
     margin-top: 50px;
     margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(208, 187, 160);
+    background-image: linear-gradient(#e6ad81, #be8352);
+    border: 3px solid #423028;
 }
 
 h1 {
-        font-family: "Titillium Web", sans-serif;
-        font-weight: 700;
-        font-size: 5em;
-        font-style: normal;
-        line-height: 0.5em;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+    line-height: 1em;
+    color:#423028;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-container {
+    background-color: rgba(232, 237, 241, 0.5);
+    background-position-y: top;
+    padding-left: 20px;
 }
 
 label {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
 }
 
 #inverted {
-    height: 1.75rem;
-    width: 1.75rem;
-    background-color: rgb(208, 187, 160);
+    height: 1.75em;
+    width: 1.75em;
 }
 
 button {
-    cursor: pointer;
     color: #0a0a23;
-    background-color: #fe6c32;
-    background-image: linear-gradient(#e6ad81, #bd6947);
-    border: 3px solid #962424;
-    font-size: 1.75rem;
+    background-color: rgb(208, 187, 160);
+    background-image: linear-gradient(#e6ad81, #be8352);
+    border: 3px solid #423028;
+    font-size: 1.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
+
+pre {
+    font-size: 2em;
+    background-color: rgba(232, 237, 241, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
